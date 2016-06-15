@@ -40,9 +40,10 @@ function mingw.make(configs)
 
     -- init the file formats
     configs.formats         = {}
-    configs.formats.static  = {"lib", ".a"}
-    configs.formats.object  = {"",    ".o"}
-    configs.formats.shared  = {"lib", ".so"}
+    configs.formats.static  = {"", ".lib"}
+    configs.formats.object  = {"", ".obj"}
+    configs.formats.shared  = {"", ".dll"}
+    configs.formats.binary  = {"", ".exe"}
 
     -- init the toolchains
     configs.tools           = {}
